@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    color: var(--color-dark2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caixa{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    padding: 2rem;
+    border-radius: 17px;
+    width: 30%;
+}
+
+
+
+button[type="submit"]{
+    background-color: orange;   
+    margin-top: 10px;
+    padding: 3px;
+    width: 200px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(223, 185, 116);
+}
