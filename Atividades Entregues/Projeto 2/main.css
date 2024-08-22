@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(241, 183, 168);
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
+
+
+header img{
+    height: 36px;
+    margin-right: 16px;
+}
+
+.container{
+    background-image: url(./images/CocaColaFundo.webp);
+    opacity: 100%;
+    background-size: cover;
+    background-position: center;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form input{
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+}
+
+form{
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    padding-left: 25px;
+}
+
+form button{
+    background-color: #009432;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+}
+
+
+table th{
+    color: #ffffff;
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.contorno {
+    color: rgb(109, 6, 6);
+    text-shadow: 
+        -1px -1px 0 #ffffff, /* Sombra superior esquerda */
+        1px -1px 0 #ffffff,  /* Sombra superior direita */
+        -1px 1px 0 #ffffff,  /* Sombra inferior esquerda */
+        1px 1px 0 #fffdfd;   /* Sombra inferior direita */
+}
+
+
+table td{
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    text-align: center;
+}
+
+footer button{
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #17e90f 0%, #e90909 100%);
+}
+
