@@ -18,4 +18,6 @@ function adicionaLinha(){
     linha += `<td>${InputNumero.value}</td>`;
 
     linha +='</tr>';
+
+    dd
 }
