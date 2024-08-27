@@ -1,4 +1,5 @@
 const form = document.getElementById('form-clientes');
+const btnRest = document.getElementById('EvniarTabela');
 
 
 let linhas ='';
@@ -9,6 +10,12 @@ form.addEventListener('submit', function(e){
 
     adicionaLinha();
     atualizaTabela();
+});
+
+btnRest.addEventListener('click', function(){
+    const corpoTabela= document.querySelector('tbody');
+    corpoTabela.innerHTML ='';
+    linhas.innerHTML ='';
 });
 
 function adicionaLinha(){
@@ -26,6 +33,9 @@ function adicionaLinha(){
 
     linhas += linha;
 
+        inputCadastroNome.value='';
+        inputCpf.value='';
+        inputNumero.value='';
 
 };
 
