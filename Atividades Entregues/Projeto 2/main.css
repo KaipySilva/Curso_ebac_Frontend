@@ -71,7 +71,7 @@ table th{
     font-weight: bolder;
 }
 
-.contorno {
+.contorno, tbody tr {
     color: rgb(109, 6, 6);
     text-shadow: 
         -1px -1px 0 #ffffff, /* Sombra superior esquerda */
