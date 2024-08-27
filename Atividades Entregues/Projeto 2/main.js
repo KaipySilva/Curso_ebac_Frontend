@@ -1,23 +1,33 @@
 const form = document.getElementById('form-clientes');
 
 
+let linhas ='';
+
+
 form.addEventListener('submit', function(e){
     e.preventDefault();
 
     adicionaLinha();
-})
+    atualizaTabela();
+});
 
 function adicionaLinha(){
     const inputCadastroNome = document.getElementById('CadastroNome');
-    const inputCpf = document.getElementById('CadastroCpfCnjp');
-    const InputNumero = document.getElementById('CadastroNumero');
+    const inputCpf = document.getElementById('CadastroCpfCnpj');
+    const inputNumero = document.getElementById('CadastroNumero');
 
-    let adicionaLinha = '<tr>'
+    let linha = '<tr>'
     linha += `<td>${inputCadastroNome.value}</td>`;
-    linha +=`<td>${inputCpf.value}</td>`;
-    linha += `<td>${InputNumero.value}</td>`;
+    linha += `<td>${inputCpf.value}</td>`;
+    linha += `<td>${inputNumero.value}</td>`;
+    linha += '</tr>';
 
-    linha +='</tr>';
+    linhas += linha;
 
-    dd
-}
+
+};
+
+    function atualizaTabela(){
+        const corpoTabela = document.querySelector('tbody');
+        corpoTabela.innerHTML = linhas;
+    }
